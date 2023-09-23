@@ -6,9 +6,9 @@
 			<p class="museum-highlight__body-description">
 				{{ highlight.description }}
 			</p>
-			<p class="museum-highlight__body-date" :style="{ flexGrow: !highlight.news && !highlight.quiz ? 1 : 0 }" v-if="highlight.date">
+			<!-- <p class="museum-highlight__body-date" :style="{ flexGrow: !highlight.news && !highlight.quiz ? 1 : 0 }" v-if="highlight.date">
 				{{ formatDate(highlight.date) }}
-			</p>
+			</p> -->
 			<div class="museum-highlight__body-news" v-if="highlight.news" :style="{ flexGrow: !highlight.quiz ? 1 : 0 }">
 				<p>{{ highlight.news.title }}{{ getNewsDate }}</p>
 			</div>
