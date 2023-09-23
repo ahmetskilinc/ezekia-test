@@ -97,6 +97,7 @@ export default {
 		border-radius: 24px 24px 0 0;
 	}
 	&__body {
+		padding: 24px;
 		display: flex;
 		flex-direction: column;
 		font-family: Montserrat;
@@ -140,7 +141,6 @@ export default {
 	&__body,
 	&__image {
 		max-width: 100%;
-		padding: 24px;
 	}
 }
 </style>
