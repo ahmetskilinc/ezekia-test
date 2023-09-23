@@ -3,7 +3,7 @@
 		<div class="museum-highlight__image" :style="{ background: `url(${image})` }"></div>
 		<div class="museum-highlight__body">
 			<h1 class="museum-highlight__body-title">{{ highlight.name }}</h1>
-			<p class="museum-highlight__body-description">
+			<p class="museum-highlight__body-description" :style="{ flexGrow: !highlight.news && !highlight.quiz ? 1 : 0 }">
 				{{ highlight.description }}
 			</p>
 			<!-- <p class="museum-highlight__body-date" :style="{ flexGrow: !highlight.news && !highlight.quiz ? 1 : 0 }" v-if="highlight.date">
