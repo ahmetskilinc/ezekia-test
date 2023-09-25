@@ -6,9 +6,6 @@
 			<p class="museum-highlight__body-description" :style="{ flexGrow: !highlight.news && !highlight.quiz ? 1 : 0 }">
 				{{ highlight.description }}
 			</p>
-			<!-- <p class="museum-highlight__body-date" :style="{ flexGrow: !highlight.news && !highlight.quiz ? 1 : 0 }" v-if="highlight.date">
-				{{ formatDate(highlight.date) }}
-			</p> -->
 			<div class="museum-highlight__body-news" v-if="highlight.news" :style="{ flexGrow: !highlight.quiz ? 1 : 0 }">
 				<p>{{ highlight.news.title }}{{ getNewsDate }}</p>
 			</div>
@@ -51,11 +48,6 @@ export default {
 		// Fake image api
 		refreshImage() {
 			this.image = `https://source.unsplash.com/random?${this.getNewKeyword()}`;
-		},
-		formatDate(date) {
-			console.log(date);
-			const newDate = new Date(date);
-			return format(newDate, "MMMM d yyyy");
 		},
 	},
 };

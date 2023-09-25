@@ -40,8 +40,6 @@ export default {
 	components: {
 		MuseumHighlight,
 	},
-	mixins: [],
-	props: {},
 	data() {
 		return {
 			spaceHighlights: [
@@ -141,7 +139,6 @@ export default {
 			}, 500);
 		},
 	},
-	created() {},
 };
 </script>
 
